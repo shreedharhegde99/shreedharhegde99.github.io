@@ -6,10 +6,7 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
   return (
     <Fragment>
-      <div className="h-24 flex p-4 items-center bg-slate-400 justify-between fixed w-full z-10 top-0">
-        <div>
-          <p className="text-4xl">Shreedhar Hegde</p>
-        </div>
+      <div className="h-24 flex p-4 items-center bg-slate-500 justify-end fixed w-full z-10 top-0">
         <div className="md:hidden">
           <div>
             <GiHamburgerMenu
@@ -20,12 +17,36 @@ export function Navbar() {
           </div>
         </div>
 
-        <div className="hidden md:flex  basis-1/2 justify-between">
-          <div>Home</div>
-          <div>About Me</div>
-          <div>Skills</div>
-          <div>Project</div>
-          <div>Contact</div>
+        <div className="hidden justify-between text-2xl md:flex md:basis-2/3 lg:basis-3/5   xl:basis-1/3">
+          <div className="cursor-pointer border-b-2 border-slate-500  hover:text-white hover:border-b-2 hover:border-blue-500">
+            <a rel="noreferrer" href="#home">
+              Home
+            </a>
+          </div>
+          <div className="cursor-pointer border-b-2 border-slate-500 hover:text-white hover:border-b-2 hover:border-blue-500">
+            <a rel="noreferrer" href="#techstack">
+              Skills
+            </a>
+          </div>
+          <div className="cursor-pointer border-b-2 border-slate-500 hover:text-white hover:border-b-2 hover:border-blue-500">
+            <a rel="noreferrer" href="#project">
+              Project
+            </a>
+          </div>
+          <div className="cursor-pointer border-b-2 border-slate-500 hover:text-white hover:border-b-2 hover:border-blue-500">
+            <a rel="noreferrer" href="#contact">
+              Contact
+            </a>
+          </div>
+          <div className="cursor-pointer border-b-2 border-slate-500 hover:text-white hover:border-b-2 hover:border-blue-500">
+            <a
+              rel="noreferrer"
+              href="https://drive.google.com/file/d/1nc28F_WVQthDAcL9jtMmcrYOPjF3nTK3/view?usp=sharing"
+              target="_blank"
+            >
+              Resume
+            </a>
+          </div>
         </div>
       </div>
       <div
@@ -43,11 +64,34 @@ export function Navbar() {
           />
         </div>
         <div>
-          <div className="text-xl    py-2 my-2">Home</div>
-          <div className="text-xl   py-2 my-2 ">About Me</div>
-          <div className="text-xl   py-2 my-2 ">Skills</div>
-          <div className="text-xl   py-2 my-2 ">Project</div>
-          <div className="text-xl   py-2 my-2 ">Contact</div>
+          <div className="text-xl py-2 my-2">
+            <a rel="noreferrer" href="#home">
+              Home
+            </a>
+          </div>
+          <div className="text-xl py-2 my-2 ">
+            <a rel="noreferrer" href="#techstack">
+              Skills
+            </a>
+          </div>
+          <div className="text-xl py-2 my-2 ">
+            <a rel="noreferrer" href="#project">
+              Project
+            </a>
+          </div>
+          <div className="text-xl py-2 my-2 ">
+            <a rel="noreferrer" href="#contact">
+              Contact
+            </a>
+          </div>
+          <div className="text-xl py-2 my-2 ">
+            <a
+              rel="noreferrer"
+              href="https://drive.google.com/file/d/1nc28F_WVQthDAcL9jtMmcrYOPjF3nTK3/view?usp=sharing"
+            >
+              Resume
+            </a>
+          </div>
         </div>
       </div>
     </Fragment>

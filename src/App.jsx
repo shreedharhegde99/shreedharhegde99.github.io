@@ -1,90 +1,59 @@
 import { Fragment } from "react";
-import { TiLocationArrow } from "react-icons/ti";
-import { IoMdCall, IoIosMail } from "react-icons/io";
-import { GrLinkedin, GrGithub } from "react-icons/gr";
 import TechStack from "./components/TechStack";
 import { Navbar } from "./components/Navbar";
+import Contact from "./components/Contact";
+import { TiLocationArrow } from "react-icons/ti";
+import Projects from "./components/Projects";
 
 function ProfilePage() {
   return (
     <Fragment>
       <Navbar />
       <Fragment>
-        <div className=" bg-slate-700  p-2 mt-24">
+        <div className=" bg-slate-700  p-2 pt-0 mt-24  ">
           <div
-            className="my-10 p-5 bg-slate-700 shadow-lg  text-white
-            shadow-yellow-500 md:shadow-2xl md:shadow-yellow-600  md:h-screen  md:mt-0 bg-no-repeat  bg-fixed  bg-contain lg:bg-cover "
-            style={{ backgroundImage: "url(https://i.imgur.com/iOod8ol.png)" }}
+            id="home"
+            className=" my-10 mt-0 p-5 py-10 bg-slate-700 shadow-lg  text-white  bg-none
+            shadow-yellow-500 md:flex md:justify-center md:gap-14 md:items-center   md:shadow-2xl md:shadow-yellow-600  
+             md:mt-0 md:pt-12  lg:justify-center lg:gap-28 lg:py-52 lg:opacity-90"
           >
-            <div className=" w-full text-center font-semibold">
+            <div className=" text-center flex flex-col items-center font-semibold ">
               <div className=" md:pb-6">
                 <img
                   src="https://i.imgur.com/XugJ0vp.jpg"
                   alt="Profile_Picture"
-                  className="m-auto w-24 h-24 rounded-full md:w-36 md:h-36 hover:shadow-lg transition-shadow  hover:shadow-purple-400 "
+                  className="m-auto w-40 h-40 rounded-full  hover:shadow-lg transition-shadow  hover:shadow-purple-400
+                   md:w-48 md:h-48 lg:w-52 lg:h-52  xl:w-60 xl:h-60"
                 />
               </div>
-              <h1 className="text-3xl mt-2 p-1  "> Shreedhar Hegde</h1>
-              <p className="p-1 text-lg">Full Stack Web Developer</p>
-            </div>
-            <div className="flex justify-center ">
-              <div className="sm:flex   md:flex-col ">
-                <div className="flex items-center max-w-sm  mt-2  font-medium text-center sm:ml-3  ">
-                  <div>
-                    <TiLocationArrow />
-                  </div>
-                  <p className="pl-2">Bangalore, Karnataka</p>
+              <h1 className="text-3xl mt-2 p-1 lg:text-4xl ">
+                Shreedhar Hegde
+              </h1>
+              <p className="p-1 text-lg lg:text-xl">Full Stack Web Developer</p>
+              <div className="flex items-center max-w-sm  mt-2  font-medium text-center  justify-center ">
+                <div>
+                  <TiLocationArrow />
                 </div>
-                <div className="flex items-center max-w-sm  mt-2  font-medium text-center sm:ml-3 ">
-                  <div>
-                    <IoMdCall />
-                  </div>
-                  <p className="pl-2">+919482101148</p>
-                </div>
-                <div className="flex items-center max-w-sm  mt-2  font-medium text-center sm:ml-3  ">
-                  <div>
-                    <IoIosMail />
-                  </div>
-                  <p className="pl-2">snhkelemane@gmail.com</p>
-                </div>
+                <p className="pl-2">Bangalore, Karnataka</p>
               </div>
-            </div>
-            <div className="px-2 py-4 text-center m-auto max-w-md md:text-lg ">
-              <p>
-                Aspiring Full Stack Web Developer who focuses on crafting clean
-                and user-friendly experiences.Actively ready to join in a great
-                lively team of a good start-up to adapt me in any situation and
-                environment with ease and perform the best.
-              </p>
             </div>
 
-            <div className="flex justify-center py-2">
-              <div className="px-2">
-                <a href="https://github.com/shreedharhegde99">
-                  <GrGithub size={"2.5rem"} />
-                </a>
-              </div>
-              <div className="px-2">
-                <a href="https://linkedin.com/shreedharhegde99">
-                  <GrLinkedin size={"2.3rem"} color="#2b75ff" />
-                </a>
-              </div>
+            <div className=" m-auto px-2 py-4 text-center text-xl  max-w-md md:m-0 lg:max-w-xl lg:text-2xl xl:max-w-3xl">
+              <p>
+                Aspiring Full Stack Web Developer who focuses on crafting clean
+                and user-friendly experiences. Actively ready to join in a great
+                lively team of a good start-up to adapt in any situation and
+                environment with ease and perform the best.
+              </p>
             </div>
           </div>
 
           {/* Tech Stacks and Project */}
           <div className=" w-full ">
-            <div>
-              <div className="bg-slate-500 p-2 py-4 ">
-                <h1 className="text-3xl text-white text-center">Tech Stacks</h1>
-              </div>
-              <TechStack />
-            </div>
-            <div>
-              <div className="bg-slate-500 p-2 py-4 ">
-                <h1 className="text-3xl text-white text-center">Projects</h1>
-              </div>
-            </div>
+            <TechStack />
+
+            <Projects />
+            <Contact />
           </div>
         </div>
       </Fragment>
