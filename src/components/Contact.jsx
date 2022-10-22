@@ -17,13 +17,17 @@ function Contact() {
               <div>
                 <IoMdCall size="1.5rem" />
               </div>
-              <p className="pl-2">+91-7204482283</p>
+              <p className="pl-2">
+                <a href="tel:+917204482283">+91-7204482283</a>
+              </p>
             </div>
             <div className="flex items-center gap-5 max-w-xs   mt-2  font-medium text-center py-2 ">
               <div>
                 <IoIosMail size="1.5rem" />
               </div>
-              <p className="pl-2">snhkelemane@gmail.com</p>
+              <p className="pl-2">
+                <a href="mailto:snhkelemane@gmail.com">snhkelemane@gmail.com</a>
+              </p>
             </div>
             <div className="flex items-center gap-5 max-w-xs   mt-2  font-medium text-center py-2 ">
               <div>
