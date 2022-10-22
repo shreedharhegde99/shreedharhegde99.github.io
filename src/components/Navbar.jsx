@@ -88,6 +88,7 @@ export function Navbar() {
             <a
               rel="noreferrer"
               href="https://drive.google.com/file/d/1nc28F_WVQthDAcL9jtMmcrYOPjF3nTK3/view?usp=sharing"
+              target="_blank"
             >
               Resume
             </a>
