@@ -15,7 +15,7 @@ function ProfilePage() {
             id="home"
             className=" my-10 mt-0 p-5 py-10 bg-slate-700 shadow-lg  text-white  bg-none
             shadow-yellow-500 md:flex md:justify-center md:gap-14 md:items-center   md:shadow-2xl md:shadow-yellow-600  
-             md:mt-0 md:pt-12  lg:justify-center lg:gap-28 lg:py-52 lg:opacity-90"
+             md:mt-0 md:pt-12  lg:justify-center lg:gap-28 lg:py-28 lg:opacity-90"
           >
             <div className=" text-center flex flex-col items-center font-semibold ">
               <div className=" md:pb-6">
