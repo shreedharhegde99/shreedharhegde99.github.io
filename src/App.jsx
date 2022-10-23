@@ -4,6 +4,7 @@ import { Navbar } from "./components/Navbar";
 import Contact from "./components/Contact";
 import { TiLocationArrow } from "react-icons/ti";
 import Projects from "./components/Projects";
+import GithubStats from "./components/GithubStats";
 
 function ProfilePage() {
   return (
@@ -53,6 +54,8 @@ function ProfilePage() {
             <TechStack />
 
             <Projects />
+            <GithubStats />
+
             <Contact />
           </div>
         </div>
