@@ -41,6 +41,15 @@ const projects = [
     deployed_link: "https://envoy-website-clone.netlify.app/",
     github_link: "https://github.com/shreedharhegde99/Envoy-Website-Clone",
   },
+  {
+    image:
+      "https://raw.githubusercontent.com/shreedharhegde99/Google-Timer-Clone/master/public/timer.png",
+    name: "Google Timer clone",
+    desc: `Google Timer is an app used to set countdown timer . We can also use this as a stopwatch `,
+    tech_stacks: [react, css, javascript],
+    deployed_link: "https://google-clock-clone.netlify.app",
+    github_link: "https://github.com/shreedharhegde99/Google-Timer-Clone",
+  },
 ];
 
 function Projects() {
@@ -50,12 +59,13 @@ function Projects() {
         <div className="bg-slate-500 p-2 py-4 ">
           <h1 className="text-3xl text-white text-center">Projects</h1>
         </div>
-        <div className="flex flex-col gap-9 justify-center items-center  py-10 text-white md:flex-row md:flex-wrap md:items-stretch md:py-14">
+        {/* <div className="flex justify-center m-auto w-full"> */}
+        <div className="flex flex-col gap-9 justify-center items-center  py-10 text-white md:flex-row md:flex-wrap md:items-stretch md:py-14  2xl:justify-start xl:px-10">
           {projects.map((project) => (
             <div
               key={project.name}
               className="bg-slate-500 rounded-md hover:bg-slate-800  hover:shadow-lg hover:shadow-cyan-500 hover:scale-105 transition-all
-              max-w-lg flex flex-col items-center justify-center text-center p-2 md:w-max"
+              max-w-lg flex flex-col items-center justify-center text-center p-2 md:w-max xl:my-4"
             >
               <div>
                 <img
@@ -101,6 +111,7 @@ function Projects() {
           ))}
         </div>
       </div>
+      {/* </div> */}
     </Fragment>
   );
 }
