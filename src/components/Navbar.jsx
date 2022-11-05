@@ -39,11 +39,7 @@ export function Navbar() {
             </a>
           </div>
           <div className="cursor-pointer border-b-2 border-slate-500 hover:text-white hover:border-b-2 hover:border-blue-500">
-            <a
-              rel="noreferrer"
-              href="https://drive.google.com/file/d/1nc28F_WVQthDAcL9jtMmcrYOPjF3nTK3/view?usp=sharing"
-              target="_blank"
-            >
+            <a href="Resume.pdf" download="Shreedhar_Hegde_Resume.pdf">
               Resume
             </a>
           </div>
@@ -87,7 +83,8 @@ export function Navbar() {
           <div className="text-xl py-2 my-2 ">
             <a
               rel="noreferrer"
-              href="https://drive.google.com/file/d/1nc28F_WVQthDAcL9jtMmcrYOPjF3nTK3/view?usp=sharing"
+              href="Resume.pdf"
+              download="Shreedhar_Hegde_Resume.pdf"
               target="_blank"
             >
               Resume
