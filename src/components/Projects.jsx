@@ -31,6 +31,16 @@ const projects = [
     deployed_link: "https://myhours.pages.dev/",
     github_link: "https://github.com/shreedharhegde99/annoyed-spark-4097",
   },
+  {
+    image:
+      "https://raw.githubusercontent.com/shreedharhegde99/Envoy-Website-Clone/main/assets/Dashboard.png",
+    name: "Envoy Clone",
+    desc: `Envoy.com is an platform for reserving workspace,room and desks. 
+    It also provides services like visitor management,workspace protection and package pickup `,
+    tech_stacks: [html, css, javascript],
+    deployed_link: "https://envoy-website-clone.netlify.app/",
+    github_link: "https://github.com/shreedharhegde99/Envoy-Website-Clone",
+  },
 ];
 
 function Projects() {
@@ -40,12 +50,12 @@ function Projects() {
         <div className="bg-slate-500 p-2 py-4 ">
           <h1 className="text-3xl text-white text-center">Projects</h1>
         </div>
-        <div className="flex flex-col gap-9 justify-center items-center py-10 text-white md:flex-row  md:py-14">
+        <div className="flex flex-col gap-9 justify-center items-center  py-10 text-white md:flex-row md:flex-wrap md:items-stretch md:py-14">
           {projects.map((project) => (
             <div
               key={project.name}
               className="bg-slate-500 rounded-md hover:bg-slate-800  hover:shadow-lg hover:shadow-cyan-500 hover:scale-105 transition-all
-              max-w-lg flex flex-col items-center justify-center text-center p-2"
+              max-w-lg flex flex-col items-center justify-center text-center p-2 md:w-max"
             >
               <div>
                 <img
