@@ -59,7 +59,7 @@ function Projects() {
         <div className="bg-slate-500 p-2 py-4 ">
           <h1 className="text-3xl text-white text-center">Projects</h1>
         </div>
-        {/* <div className="flex justify-center m-auto w-full"> */}
+
         <div
           className="flex flex-col gap-9 justify-center items-center  py-10  text-white 
         md:flex-row md:flex-wrap md:items-stretch md:py-14  2xl:justify-start xl:px-10"
@@ -114,7 +114,6 @@ function Projects() {
           ))}
         </div>
       </div>
-      {/* </div> */}
     </Fragment>
   );
 }
