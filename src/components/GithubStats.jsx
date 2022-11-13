@@ -24,7 +24,10 @@ function GithubStats() {
           </a>
 
           <a href="http://www.github.com/shreedharhegde99">
-            <img src="https://github-readme-streak-stats.herokuapp.com/?user=shreedharhegde99&stroke=ffffff&background=1c1917&ring=14b8a6&fire=14b8a6&currStreakNum=ffffff&currStreakLabel=14b8a6&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true" />
+            <img
+              src="https://github-readme-streak-stats.herokuapp.com/?user=shreedharhegde99&stroke=ffffff&background=1c1917&ring=14b8a6&fire=14b8a6&currStreakNum=ffffff&currStreakLabel=14b8a6&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true"
+              alt="shreedharhegde99's GitHub contribution stats"
+            />
           </a>
         </div>
       </div>
