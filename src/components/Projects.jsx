@@ -58,7 +58,7 @@ const projects = [
     image:
     "https://i.imgur.com/fiBFwiZ.png",
     name: "Treasury Trip website",
-    desc: `Treasury trip is an website to expolre tourist places, book flight tickets,book airport taxis and book hotel rooms`,
+    desc: `Treasury trip is a website to explore tourist places, book flight tickets, airport taxis and hotel rooms`,
     tech_stacks: [react, chakraui, nodejs,expressjs,mongodb],
     deployed_link: "https://treasury-trip.netlify.app/",
     github_link: "https://github.com/shreedharhegde99/imported-existence-8823",
