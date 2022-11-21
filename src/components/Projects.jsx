@@ -28,18 +28,29 @@ function Projects() {
                   className="w-full h-64"
                 />
               </div>
-              <div className="px-2">
+              <div className="px-2 ">
                 <div>
                   <h1 className="text-2xl my-2 font-semibold">
                     {project.name}
                   </h1>
                   <p className="py-2">{project.desc}</p>
                 </div>
-                <div className="text-xl">Tech Stacks</div>
-                <div className=" py-4 flex justify-center gap-5 ">
-                  {project.tech_stacks.map((stack, i) => (
-                    <div key={i}>{stack}</div>
-                  ))}
+                <div className="bg-slate-700 py-4 rounded-lg">
+                  <div className="text-xl">Tech Stacks</div>
+                  <div className=" py-4 flex justify-center gap-6  ">
+                    {project.tech_stacks_icons.map((stack, i) => (
+                      <div
+                        key={i}
+                        className="flex flex-col items-center gap-2 justify-between "
+                      >
+                        <div>{stack}</div>
+                        <div className=" font-bold rounded-md px-2">
+                          {" "}
+                          {project.tech_stacks[i]}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
                 <div className="flex justify-center gap-7 py-4">
                   <div>
@@ -48,7 +59,7 @@ function Projects() {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <RiExternalLinkFill size="1.4rem" />
+                      <RiExternalLinkFill size="1.7rem" />
                     </a>
                   </div>
                   <div>
@@ -57,7 +68,7 @@ function Projects() {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <GrGithub size="1.4rem" />
+                      <GrGithub size="1.7rem" />
                     </a>
                   </div>
                 </div>

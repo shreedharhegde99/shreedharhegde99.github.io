@@ -26,7 +26,8 @@ export const projectList = [
     name: "KFC Clone",
     desc: `KFC is a fast food restaurant chain that specializes in fried chicken. 
               It is the world's second-largest restaurant chain after McDonald's`,
-    tech_stacks: [html, css, javascript],
+    tech_stacks_icons: [html, css, javascript],
+    tech_stacks: ["Html", "CSS", "Javascript"],
     deployed_link: "https://kfc-clone-spry-smash-650.netlify.app/",
     github_link: "https://github.com/shreedharhegde99/spry-smash-650",
   },
@@ -35,7 +36,9 @@ export const projectList = [
     name: "MyHours Clone",
     desc: `MyHours is an online platform to organize projects, track time and report work.
         It is good great tool to create great looking reports `,
-    tech_stacks: [react, chakraui],
+    tech_stacks_icons: [react, chakraui],
+    tech_stacks: ["React", "ChakraUI"],
+
     deployed_link: "https://myhours.pages.dev/",
     github_link: "https://github.com/shreedharhegde99/annoyed-spark-4097",
   },
@@ -45,7 +48,9 @@ export const projectList = [
     name: "Envoy Clone",
     desc: `Envoy.com is an platform for reserving workspace,room and desks. 
       It also provides services like visitor management,workspace protection and package pickup `,
-    tech_stacks: [html, css, javascript],
+    tech_stacks_icons: [html, css, javascript],
+    tech_stacks: ["Html", "CSS", "Javascript"],
+
     deployed_link: "https://envoy-website-clone.netlify.app/",
     github_link: "https://github.com/shreedharhegde99/Envoy-Website-Clone",
   },
@@ -54,7 +59,8 @@ export const projectList = [
       "https://raw.githubusercontent.com/shreedharhegde99/Google-Timer-Clone/master/public/timer.png",
     name: "Google Timer clone",
     desc: `Google Timer is an app used to set countdown timer . We can also use this as a stopwatch `,
-    tech_stacks: [react, css, javascript],
+    tech_stacks_icons: [react, css, javascript],
+    tech_stacks: ["React", "CSS", "Javascript"],
     deployed_link: "https://google-clock-clone.netlify.app",
     github_link: "https://github.com/shreedharhegde99/Google-Timer-Clone",
   },
@@ -62,8 +68,10 @@ export const projectList = [
     image: "https://i.imgur.com/fiBFwiZ.png",
     name: "Treasury Trip website",
     desc: `Treasury trip is a website to explore tourist places, book flight tickets, airport taxis and hotel rooms`,
-    tech_stacks: [react, chakraui, nodejs, expressjs, mongodb],
+    tech_stacks_icons: [react, chakraui, nodejs, expressjs, mongodb],
+    tech_stacks: ["React", "ChakraUI", "NodeJs", "ExpressJS", "MongoDB"],
+
     deployed_link: "https://treasury-trip.netlify.app/",
-    github_link: "https://github.com/shreedharhegde99/imported-existence-8823",
+    github_link: "https://github.com/shreedharhegde99/Treasury-Trip",
   },
 ];
