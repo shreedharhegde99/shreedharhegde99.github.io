@@ -19,9 +19,9 @@ export function Navbar() {
 
         <div className="hidden justify-between text-2xl md:flex md:basis-2/3 lg:basis-3/5   xl:basis-1/3">
           <div className="cursor-pointer py-1 px-2 border-b-4   border-gray-100  hover:text-white hover:bg-gray-200 hover:rounded-xl  hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:border-blue-500">
-            {/* <a rel="noreferrer" href="#home"> */}
-            Home
-            {/* </a> */}
+            <a rel="noreferrer" href="#home">
+              Home
+            </a>
           </div>
           <div className="cursor-pointer py-1 px-2 border-b-4   border-gray-100 hover:text-white hover:bg-gray-200 hover:rounded-xl  hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:border-blue-500">
             <a rel="noreferrer" href="#techstack">
