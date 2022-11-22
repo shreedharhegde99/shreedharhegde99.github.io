@@ -37,7 +37,7 @@ function Projects() {
                 </div>
                 <div className="bg-slate-700 py-4 rounded-lg">
                   <div className="text-xl">Tech Stacks</div>
-                  <div className=" py-4 flex justify-center gap-6  ">
+                  <div className=" py-4 flex justify-center gap-6 flex-wrap ">
                     {project.tech_stacks_icons.map((stack, i) => (
                       <div
                         key={i}
