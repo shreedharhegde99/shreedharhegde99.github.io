@@ -1,6 +1,14 @@
 import { Fragment, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
+import { Link } from "react-scroll";
+
+const NavbarData = [
+  { to: "home", text: "Home" },
+  { to: "techstack", text: "Skills" },
+  { to: "project", text: "Project" },
+  { to: "contact", text: "Contact" },
+];
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
@@ -18,26 +26,17 @@ export function Navbar() {
         </div>
 
         <div className="hidden justify-between text-2xl md:flex md:basis-2/3 lg:basis-3/5   xl:basis-1/3">
-          <div className="cursor-pointer py-1 px-2 border-b-4   border-gray-100  hover:text-white hover:bg-gray-200 hover:rounded-xl  hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:border-blue-500">
-            <a rel="noreferrer" href="#home">
-              Home
-            </a>
-          </div>
-          <div className="cursor-pointer py-1 px-2 border-b-4   border-gray-100 hover:text-white hover:bg-gray-200 hover:rounded-xl  hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:border-blue-500">
-            <a rel="noreferrer" href="#techstack">
-              Skills
-            </a>
-          </div>
-          <div className="cursor-pointer py-1 px-2 border-b-4   border-gray-100 hover:text-white hover:bg-gray-200 hover:rounded-xl  hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:border-blue-500">
-            <a rel="noreferrer" href="#project">
-              Project
-            </a>
-          </div>
-          <div className="cursor-pointer py-1 px-2 border-b-4   border-gray-100 hover:text-white hover:bg-gray-200 hover:rounded-xl  hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:border-blue-500">
-            <a rel="noreferrer" href="#contact">
-              Contact
-            </a>
-          </div>
+          {NavbarData.map((el) => (
+            <div
+              className="cursor-pointer py-1 px-2 border-b-4   border-gray-100 
+             hover:text-white hover:bg-gray-200 hover:rounded-xl  hover:bg-gradient-to-r
+              from-cyan-500 to-blue-500 hover:border-blue-500"
+            >
+              <Link to={el.to} smooth={true}>
+                {el.text}
+              </Link>
+            </div>
+          ))}
           <div className="cursor-pointer py-1 px-2 border-b-4   border-gray-100 hover:text-white hover:bg-gray-200 hover:rounded-xl  hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:border-blue-500">
             <a href="Resume.pdf" download="Shreedhar_Hegde_Resume.pdf">
               Resume
@@ -60,32 +59,20 @@ export function Navbar() {
           />
         </div>
         <div>
-          <div className="text-xl py-2 my-2">
-            <a rel="noreferrer" href="#home">
-              Home
-            </a>
-          </div>
-          <div className="text-xl py-2 my-2 ">
-            <a rel="noreferrer" href="#techstack">
-              Skills
-            </a>
-          </div>
-          <div className="text-xl py-2 my-2 ">
-            <a rel="noreferrer" href="#project">
-              Project
-            </a>
-          </div>
-          <div className="text-xl py-2 my-2 ">
-            <a rel="noreferrer" href="#contact">
-              Contact
-            </a>
-          </div>
+          {NavbarData.map((el) => (
+            <div className="text-xl py-2 my-2" key={el.to}>
+              <Link smooth={true} to={el.to}>
+                <p onClick={() => setOpen(false)}>{el.text}</p>
+              </Link>
+            </div>
+          ))}
           <div className="text-xl py-2 my-2 ">
             <a
               rel="noreferrer"
               href="Resume.pdf"
               download="Shreedhar_Hegde_Resume.pdf"
               target="_blank"
+              onClick={() => setOpen(false)}
             >
               Resume
             </a>
