@@ -1,6 +1,8 @@
 import { Fragment } from "react";
 import { GrGithub, GrLinkedin } from "react-icons/gr";
 import { IoIosMail, IoMdCall } from "react-icons/io";
+import { TiLocationArrow } from "react-icons/ti";
+
 import ContactForm from "./ContactForm";
 
 function Contact() {
@@ -9,13 +11,19 @@ function Contact() {
       <div id="contact">
         <div>
           <div className="bg-slate-500 p-2 py-4 ">
-            <h1 className="text-3xl text-white text-center">Contact</h1>
+            <h1 className="text-3xl text-yellow-300 text-center">Contact</h1>
           </div>
         </div>
         <div className="flex flex-col items-center pb-10 md:flex-row md:p-4 md:justify-around md:items-start">
           <div className="flex-grow md:py-10">
             <div className="flex justify-center">
               <div className=" items-center  text-xl text-white py-4 m-auto">
+                <div className="flex items-center gap-5 max-w-xs   mt-2  font-medium text-center py-2">
+                  <div>
+                    <TiLocationArrow size="1.5rem" />
+                  </div>
+                  <p className="pl-2">Bangalore, Karnataka</p>
+                </div>
                 <div className="flex items-center gap-5 max-w-xs   mt-2  font-medium text-center py-2">
                   <div>
                     <IoMdCall size="1.5rem" />
