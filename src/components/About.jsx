@@ -7,7 +7,7 @@ export default function About() {
       <div
         id="home"
         className=" my-10 mt-0 p-5 py-10 bg-slate-700 shadow-lg  text-white  bg-none
-            shadow-yellow-500 md:flex md:justify-center md:gap-14 md:items-center   md:shadow-2xl md:shadow-yellow-600  
+             md:flex md:justify-center md:gap-14 md:items-center   md:shadow-2xl 
              md:mt-0 md:pt-12  lg:justify-center lg:gap-28 lg:py-28 lg:opacity-90"
       >
         <div className=" text-center flex flex-col items-center font-semibold ">
@@ -15,7 +15,7 @@ export default function About() {
             <img
               src="https://i.imgur.com/XugJ0vp.jpg"
               alt="Profile_Picture"
-              className="m-auto w-40 h-40 rounded-full  hover:shadow-lg transition-shadow  hover:shadow-purple-400
+              className="m-auto w-40 h-40 rounded-full  
                    md:w-48 md:h-48 lg:w-52 lg:h-52  xl:w-60 xl:h-60"
             />
           </div>
