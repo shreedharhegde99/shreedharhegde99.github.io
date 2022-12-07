@@ -43,16 +43,14 @@ export const projectList = [
     github_link: "https://github.com/shreedharhegde99/annoyed-spark-4097",
   },
   {
-    image:
-      "https://raw.githubusercontent.com/shreedharhegde99/Envoy-Website-Clone/main/assets/Dashboard.png",
-    name: "Envoy Clone",
-    desc: `Envoy.com is an platform for reserving workspace,room and desks. 
-      It also provides services like visitor management,workspace protection and package pickup `,
-    tech_stacks_icons: [html, css, javascript],
-    tech_stacks: ["Html", "CSS", "Javascript"],
+    image: "https://i.imgur.com/fiBFwiZ.png",
+    name: "Treasury Trip website",
+    desc: `Treasury trip is a website to explore tourist places, book flight tickets, airport taxis and hotel rooms`,
+    tech_stacks_icons: [react, chakraui, nodejs, expressjs, mongodb],
+    tech_stacks: ["React", "ChakraUI", "NodeJs", "ExpressJS", "MongoDB"],
 
-    deployed_link: "https://envoy-website-clone.netlify.app/",
-    github_link: "https://github.com/shreedharhegde99/Envoy-Website-Clone",
+    deployed_link: "https://treasury-trip.netlify.app/",
+    github_link: "https://github.com/shreedharhegde99/Treasury-Trip",
   },
   {
     image:
@@ -63,15 +61,5 @@ export const projectList = [
     tech_stacks: ["React", "CSS", "Javascript"],
     deployed_link: "https://google-clock-clone.netlify.app",
     github_link: "https://github.com/shreedharhegde99/Google-Timer-Clone",
-  },
-  {
-    image: "https://i.imgur.com/fiBFwiZ.png",
-    name: "Treasury Trip website",
-    desc: `Treasury trip is a website to explore tourist places, book flight tickets, airport taxis and hotel rooms`,
-    tech_stacks_icons: [react, chakraui, nodejs, expressjs, mongodb],
-    tech_stacks: ["React", "ChakraUI", "NodeJs", "ExpressJS", "MongoDB"],
-
-    deployed_link: "https://treasury-trip.netlify.app/",
-    github_link: "https://github.com/shreedharhegde99/Treasury-Trip",
   },
 ];
