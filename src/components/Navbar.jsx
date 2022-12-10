@@ -14,7 +14,7 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
   return (
     <Fragment>
-      <div className="h-24 flex p-4 items-center bg-blue-200   justify-end fixed w-full z-10 top-0">
+      <div className="h-24 flex p-4 items-center bg-white  justify-end fixed w-full z-10 top-0">
         <div className="md:hidden">
           <div>
             <GiHamburgerMenu
