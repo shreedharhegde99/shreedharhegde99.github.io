@@ -38,8 +38,20 @@ export function Navbar() {
               </Link>
             </div>
           ))}
-          <div className="cursor-pointer py-1 px-4  hover:text-white hover:rounded-xl  hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:border-blue-500">
-            <a href="Resume.pdf" download="Shreedhar_Hegde_Resume.pdf">
+          <div
+            onClick={() =>
+              window.open(
+                "https://drive.google.com/file/d/1nc28F_WVQthDAcL9jtMmcrYOPjF3nTK3/view?usp=share_link",
+                "_blank"
+              )
+            }
+            className="cursor-pointer py-1 px-4  hover:text-white hover:rounded-xl  
+            hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:border-blue-500"
+          >
+            <a
+              href="https://github.com/shreedharhegde99/shreedharhegde99.github.io/raw/master/public/Shreedhar_Hegde_Resume.pdf"
+              download
+            >
               Resume
             </a>
           </div>
@@ -67,12 +79,19 @@ export function Navbar() {
               </Link>
             </div>
           ))}
-          <div className="text-xl py-2 my-2 ">
+          <div
+            onClick={() =>
+              window.open(
+                "https://drive.google.com/file/d/1nc28F_WVQthDAcL9jtMmcrYOPjF3nTK3/view?usp=share_link",
+                "_blank"
+              )
+            }
+            className="text-xl py-2 my-2 "
+          >
             <a
               rel="noreferrer"
-              href="Resume.pdf"
-              download="Shreedhar_Hegde_Resume.pdf"
-              target="_blank"
+              href="https://github.com/shreedharhegde99/shreedharhegde99.github.io/raw/master/public/Shreedhar_Hegde_Resume.pdf"
+              download
               onClick={() => setOpen(false)}
             >
               Resume
