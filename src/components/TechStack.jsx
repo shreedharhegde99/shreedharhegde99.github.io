@@ -10,6 +10,7 @@ import {
   SiRedux,
 } from "react-icons/si";
 import { IoLogoNodejs } from "react-icons/io";
+import Heading from "./Heading";
 
 const data = [
   { name: "HTML", icon: <SiHtml5 size="5.5rem" color="#ff6637" /> },
@@ -27,9 +28,8 @@ const data = [
 function TechStack() {
   return (
     <div id="techstack">
-      <div className="bg-slate-500 p-2 py-4 ">
-        <h1 className="text-3xl text-yellow-300 text-center">Tech Stacks</h1>
-      </div>
+      <Heading text="Tech Stacks" />
+
       <div className="flex flex-wrap justify-center py-6  mt-4 shadow-2xl   shadow-cyan-500/50 lg:grid lg:grid-cols-5 lg:gap-10 lg:place-items-center lg:w-4/5 lg:m-auto lg:shadow-none xl:w-2/3">
         {data.map((el) => (
           <div

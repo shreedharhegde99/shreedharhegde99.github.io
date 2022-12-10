@@ -4,15 +4,14 @@ import { IoIosMail, IoMdCall } from "react-icons/io";
 import { TiLocationArrow } from "react-icons/ti";
 
 import ContactForm from "./ContactForm";
+import Heading from "./Heading";
 
 function Contact() {
   return (
     <Fragment>
       <div id="contact">
         <div>
-          <div className="bg-slate-500 p-2 py-4 ">
-            <h1 className="text-3xl text-yellow-300 text-center">Contact</h1>
-          </div>
+          <Heading text="Contact" />
         </div>
         <div className="flex flex-col items-center pb-10 md:flex-row md:p-4 md:justify-around md:items-start">
           <div className="flex-grow md:py-10">

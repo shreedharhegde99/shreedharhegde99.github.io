@@ -2,15 +2,13 @@ import { Fragment } from "react";
 import { GrGithub } from "react-icons/gr";
 import { RiExternalLinkFill } from "react-icons/ri";
 import { projectList } from "../assets/projects";
+import Heading from "./Heading";
 
 function Projects() {
   return (
     <Fragment>
       <div id="project">
-        <div className="bg-slate-500 p-2 py-4 ">
-          <h1 className="text-3xl text-yellow-300 text-center">Projects</h1>
-        </div>
-
+        <Heading text="Projects" />
         <div
           className="flex flex-col gap-12 transition-all md:gap-9 justify-center items-center  py-10  text-white 
         md:flex-row md:flex-wrap md:items-stretch md:py-14  xl:justify-center xl:px-10"

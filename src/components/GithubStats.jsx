@@ -1,13 +1,10 @@
 import GitHubCalendar from "react-github-calendar";
+import Heading from "./Heading";
 
 function GithubStats() {
   return (
     <div>
-      <div className="bg-slate-500 p-2 py-4 ">
-        <h1 className="text-3xl text-center text-yellow-300">
-          Github Stats and Contribution
-        </h1>
-      </div>
+      <Heading text=" Github Stats and Contribution" />
       <div className="p-4 py-10 my-2 text-white ">
         <div className="w-full flex justify-center py-8 text-lg ">
           <GitHubCalendar
