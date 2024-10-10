@@ -13,7 +13,7 @@ export default function About() {
         <div className=" text-center flex flex-col items-center font-semibold ">
           <div className=" md:pb-6">
             <img
-              src="https://i.imgur.com/XugJ0vp.jpg"
+              src="https://res.cloudinary.com/dp3u41izk/image/upload/v1728544031/XugJ0vp_xnh4hy.jpg"
               alt="Profile_Picture"
               className="m-auto w-40 h-40 rounded-full  
                    md:w-48 md:h-48 lg:w-52 lg:h-52  xl:w-60 xl:h-60"
